@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protofollio</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/project.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="./gsapandtweenmax/TweenMax.min.js"></script>
+    <script src="./bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div class="conatiner-fluid">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg fixed-top" style="background: linear-gradient(62deg, #00000037 0%, #0000006b 60%);">
+            <div class="container-fluid">
+                <a class="navbar-brand me-auto mb-2 mb-lg-0 fw-bold fs-1 text-white" href="#">Gowtham Nagaraj</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <span class=" me-auto mb-2 mb-lg-0"></span>
+                    <form class="d-flex">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item me-2">
+                                <a class="nav-link text-white fw-bold fs-5" aria-current="page" href="#landing-page">Home</a>
+                            </li>
+                            <li class="nav-item me-2">
+                                <a class="nav-link text-white fw-bold fs-5" aria-current="page" href="#about">About</a>
+                            </li>
+                            <li class="nav-item me-2">
+                                <a class="nav-link text-white fw-bold fs-5" aria-current="page" href="#project">Projects</a>
+                            </li>
+                            <li class="nav-item me-2"></li>
+                            <a class="nav-link text-white fw-bold fs-5" aria-current="page" href="#contact">Contacts</a>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Landing page -->
+        <div class="container-xxl" id="landing-page">
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 g-2">
+                <div class="col">
+                    <div class="card border-0 bg-transparent mt-5">
+                        <div class="typewrite-container">
+                            <h1> Hi, I'm
+                                <a href="#" class="typewrite" data-period="2000"
+                                    data-type='[ "Gowtham Nagaraj.", "Frontend Desginer", "Frontend Developer"]'>
+                                    <span class="wrap"></span>
+                                </a>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 bg-transparent">
+                        <div class="text-center mt-5">
+                            <img class="my-img" src="./img/me/myimg-removebg-preview.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About -->
+
+
+        <div class="container px-4 py-5" id="about">
+            <h2 class="pb-2 border-bottom text-center text-decoration-underline text-primary fw-bold fs-1">About</h2>
+
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                <div class="col">
+                    <div class="card card-cover card-container overflow-hidden text-white bg-dark rounded-5 shadow-lg about-conatiner"
+                        style="height:350px;background-image:url('./img/about/selfintroduction.jpg');background-size: cover;">
+                        <div class="d-flex flex-column text-white text-shadow-1 overlay">
+                            <h2 class="p-5 mb-0 display-6 lh-1 fw-bold">About me </h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card card-cover card-container overflow-hidden text-white bg-dark rounded-5 shadow-lg about-conatiner"
+                        style="height:350px;background-image:url('./img/about/myskills.jpg');background-size: cover;">
+                        <div class="d-flex flex-column text-white text-shadow-1 overlay">
+                            <h2 class="p-5 mb-0 display-6 lh-1 fw-bold">My-Skills</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card card-cover card-container overflow-hidden text-white bg-dark rounded-5 shadow-lg about-conatiner"
+                        style="height:350px;background-image:url('./img/about/myresume.jpg');background-size: cover;">
+                        <div class="d-flex flex-column text-white text-shadow-1 overlay">
+                            <h2 class="p-5 mb-0 display-6 lh-1 fw-bold">My Resume</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects -->
+
+        <div class="container" id="project">
+            <h2 class="pb-2 border-bottom text-center text-decoration-underline text-primary fw-bold fs-1">Projects</h2>
+            <main class="main-content">
+                <section class="slideshow">
+                    <div class="slideshow-inner">
+                        <div class="slides">
+                            <div class="slide is-active ">
+                                <div class="slide-content">
+                                    <div class="caption">
+                                        <div class="title">SAFS Eco-tech website</div>
+                                        <div class="text">
+                                            <p>Home page</p>
+                                        </div>
+                                        <a href="#" class="slide-btn btn">
+                                            <span class="btn-inner">Learn More</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="image-container">
+                                    <img src="./img/projects/safs1.png" alt="" class="image" />
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="slide-content">
+                                    <div class="caption">
+                                        <div class="title">SAFS Eco-tech website</div>
+                                        <div class="text">
+                                            <p>Agriculture</p>
+                                        </div>
+                                        <a href="#" class="slide-btn btn">
+                                            <span class="btn-inner">Learn More</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="image-container">
+                                    <img src="./img/projects/safs2.png" alt="" class="image" />
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="slide-content">
+                                    <div class="caption">
+                                        <div class="title">SAFS Eco-tech website</div>
+                                        <div class="text">
+                                            <p>Dtails</p>
+                                        </div>
+                                        <a href="#" class="slide-btn btn">
+                                            <span class="btn-inner">Learn More</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="image-container">
+                                    <img src="./img/projects/safs3.png" alt="" class="image" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pagination">
+                            <div class="item is-active">
+                                <span class="icon">1</span>
+                            </div>
+                            <div class="item">
+                                <span class="icon">2</span>
+                            </div>
+                            <div class="item">
+                                <span class="icon">3</span>
+                            </div>
+                        </div>
+                        <div class="arrows">
+                            <div class="arrow prev">
+                                <span class="svg svg-arrow-left">
+                                    <svg version="1.1" id="svg4-Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px"
+                                        height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26"
+                                        xml:space="preserve">
+                                        <path
+                                            d="M13,26c-0.256,0-0.512-0.098-0.707-0.293l-12-12c-0.391-0.391-0.391-1.023,0-1.414l12-12c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414L2.414,13l11.293,11.293c0.391,0.391,0.391,1.023,0,1.414C13.512,25.902,13.256,26,13,26z" />
+                                    </svg>
+                                    <span class="alt sr-only"></span>
+                                </span>
+                            </div>
+                            <div class="arrow next">
+                                <span class="svg svg-arrow-right">
+                                    <svg version="1.1" id="svg5-Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px"
+                                        height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26"
+                                        xml:space="preserve">
+                                        <path
+                                            d="M1,0c0.256,0,0.512,0.098,0.707,0.293l12,12c0.391,0.391,0.391,1.023,0,1.414l-12,12c-0.391,0.391-1.023,0.391-1.414,0s-0.391-1.023,0-1.414L11.586,13L0.293,1.707c-0.391-0.391-0.391-1.023,0-1.414C0.488,0.098,0.744,0,1,0z" />
+                                    </svg>
+                                    <span class="alt sr-only"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <!-- Contact -->
+        <div class="container mt-5" id="contact">
+            <h2 class="pb-2 border-bottom text-center text-decoration-underline text-primary fw-bold fs-1">Contact</h2>
+            
+            <main class="form-signin text-center">
+                <form>
+                  <img class="mb-4" src="./img/contact/message.png" alt="" width="72" height="57">
+                  <h1 class="h3 mb-3 fw-normal">Contact me</h1>
+              
+                  <div class="mb-3 text-start">
+                    <label for="exampleFormControlInput1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                  </div>
+                  <div class="mb-3 text-start">
+                    <label for="exampleFormControlTextarea1" class="form-label">Write Something</label>
+                    <input type="text" class="form-control" id="comment" placeholder="Write Something..." />
+                  </div>
+              
+                  <button class="w-100 btn btn-primary send-btn" type="submit" onclick="sendIt(event)">Send</button>
+                </form>
+                <div id="response-message"></div>
+              </main>
+        </div>
+        
+        <div class="container bg-body-tertiary">
+            <footer class="py-3 my-4">
+              <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item">
+                    <a class="nav-link text-primary fs-6" aria-current="page" href="#landing-page">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-primary fs-6" aria-current="page" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-primary fs-6" aria-current="page" href="#project">Projects</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link text-primary fs-6" aria-current="page" href="#contact">Contacts</a>
+                </li>
+            </ul>
+              <p class="text-center">&copy; <script>document.write(new Date().getFullYear())</script></p>
+            </footer>
+          </div>
+    </div>
+
+    <script src="./js/autotype-writer.js"></script>
+    <script src="./js/slide.js"></script>
+    <script src="./js/contact.js"></script>
+</body>
+
+</html>
